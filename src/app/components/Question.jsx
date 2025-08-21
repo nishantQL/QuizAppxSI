@@ -1,4 +1,4 @@
-// This file only holds the quiz questions
+// simply asset for quiz
 const questions = [
   {
     question: "Which is largest animal in the world?",

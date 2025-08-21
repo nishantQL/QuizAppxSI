@@ -1,10 +1,10 @@
-"use client";
+"use client";                  // to use usestate ,useeffect in nextjs etc
 import { useState } from "react";
 import questions from "./components/Question"; 
 
 export default function Quiz() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [score, setScore] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);   // start from zero
+  const [score, setScore] = useState(0);    
   const [selected, setSelected] = useState(null);
   const [showScore, setShowScore] = useState(false);
 
@@ -52,13 +52,17 @@ export default function Quiz() {
             </button>
           </div>
         ) : (
-          <>
+          <>                                          
+
+          
             {/* Question */}
             <h2 className="text-lg font-semibold text-[#001e4d] mt-4">
               {currentIndex + 1}. {currentQuestion.question}
             </h2>
 
-            {/* Answer Buttons */}
+            
+
+            {/* Answer Buttons  (used AI for styling)*/}
             <div className="mt-4 space-y-3">
               {currentQuestion.answers.map((answer, i) => {
                 let btnStyle =
@@ -89,11 +93,10 @@ export default function Quiz() {
               })}
             </div>
 
-            {/* Next + Restart Buttons */}
+            {/* Next nd Restart Buttons */}
             <div className="flex gap-4 mt-6">
               {selected !== null && (
-                <button
-                  onClick={handleNext}
+                <button onClick={handleNext}
                   className="bg-[#001e4d] text-white px-6 py-2 rounded-md shadow"
                 >
                   Next
