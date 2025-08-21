@@ -1,40 +1,36 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+>> Features
 
-## Getting Started
+~ Clean UI built with Tailwind CSS
 
-First, run the development server:
+~ Questions stored separately in a questions.js file for easy editing
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+~ Shows correct/incorrect answers instantly
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+~ Tracks and displays the final score
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+~ Restart quiz option
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+~ "Next" button to move between questions
 
-## Learn More
+~ Built using Next.js App Router
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+>> How It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+A question with multiple answers is shown.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# QuizAppxSI
->>>>>>> 6e4e254ab056aa9727c65e43b7b4542841072694
+Select an answer:
+
+ Correct → turns green
+
+ Wrong → turns red, and the correct one turns green
+
+After selecting, click Next to continue.
+
+At the end, your total score is displayed.
+
+Click Restart Quiz to play again.
+
+
